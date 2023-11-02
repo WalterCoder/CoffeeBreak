@@ -1,0 +1,404 @@
+/* NAVBAR SECTION */
+
+/* List items */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+    font-size: 2rem;
+}
+
+a {
+    color: rgb(134, 94, 64);
+    text-decoration: none;
+    transition: 0.7s ease;
+
+    
+}
+/* Navigation bar container */
+/* Estilos de la barra de navegación */
+.navbar {
+    position: fixed; /* Fija la barra de navegación */
+    top: 0; /* La fija en la parte superior de la ventana */
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.837);
+    z-index: 100; /* Coloca la barra de navegación sobre el contenido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 2rem;
+    margin:0;
+}
+
+/* Otros estilos de la barra de navegación */
+/* ... (los estilos restantes) */
+
+.nav-menu {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 60px;
+
+}
+/* Navigation menu styling  - resume */
+.nav-branding {
+    font-size: 2rem;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: rgb(77, 51, 33);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+/* Bars in the hamburger icon */
+.bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color:#6F4E37;
+}
+
+body{
+    background-image:url(imgcoffee/background.jpg);
+    background-size:cover;
+    
+
+
+}
+
+/*main section*/
+
+.first-image{
+    display:flex;
+    align-items:center;
+    background-color:rgba(255, 255, 255, 0.799);
+    margin:10rem 25rem 10rem 25rem;
+    padding:2rem;
+    text-align:center;
+    justify-content: flex-start;
+}
+.buy-now{
+    display:flex;
+    justify-content: flex-start;
+    font-size:1.7rem;
+    background-color:black;
+    color:white;
+    border-radius:50px;
+    
+    margin:1rem 1rem 1rem 10rem;
+    padding:10px 14px 12px 14px;
+}
+.first-image img{
+    margin:0;
+    padding:0;
+    
+}
+
+@media (max-width: 1590px){
+
+    .first-image{
+        display:flex;
+        align-items:center;
+        background-color:rgba(255, 255, 255, 0.799);
+        margin:10rem 20rem 10rem 20rem;
+        padding:2rem;
+        text-align:center;
+        justify-content: flex-start;
+    }
+    .buy-now{
+        display:flex;
+        justify-content: flex-start;
+        font-size:1.5rem;
+        background-color:black;
+        color:white;
+        border-radius:50px;
+        
+        margin:1rem 1rem 1rem 10rem;
+        padding:10px 10px 10px 10px;
+    }
+    .first-image img{
+        margin:0;
+        padding:0;
+        width:250px;
+        
+    }
+
+
+}
+    @media (max-width: 1390px){
+
+        .first-image{
+            display:flex;
+            align-items:center;
+            background-color:rgba(255, 255, 255, 0.799);
+            margin:10rem 10rem 10rem 10rem;
+            padding:2rem;
+            text-align:center;
+            justify-content: flex-start;
+        }
+        .buy-now{
+            display:flex;
+            justify-content: flex-start;
+            font-size:1.5rem;
+            background-color:black;
+            color:white;
+            border-radius:50px;
+            
+            margin:1rem 1rem 1rem 10rem;
+            padding:10px 10px 10px 10px;
+        }
+        .first-image img{
+            margin:0;
+            padding:0;
+            width:250px;
+            
+        }
+
+        
+
+        
+    
+    }
+
+
+
+
+
+
+
+@media (max-width: 1050px){
+
+
+    /*COMPRAR AHORA SECTION*/
+    .first-image{
+        display:flex;
+        align-items:center;
+        background-color:rgba(255, 255, 255, 0.799);
+        margin:10rem 5rem 10rem 5rem;
+        padding:2rem;
+        text-align:center;
+        justify-content: flex-start;
+    }
+    .buy-now{
+        display:flex;
+        justify-content: flex-start;
+        font-size:1.5rem;
+        background-color:black;
+        color:white;
+        border-radius:50px;
+        
+        margin:1rem 1rem 1rem 5rem;
+        padding:10px 10px 10px 10px;
+    }
+    .first-image img{
+        margin:0;
+        padding:0;
+        width:250px;
+        
+    }
+
+    body{
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-image: url(imgcoffee/background.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-color: rgb(16, 16, 16);
+    }
+    /*Navigation Bar*/
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -120%;
+        top: 65px;
+        gap: 0;
+        flex-direction:column;
+        background-color:#ffffffe1;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 1;
+    }
+
+    .nav-item {
+        padding:10px;
+        margin:0rem 5rem 0rem 4rem;
+        font-size: 1.2rem;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+
+.logo{
+    width:65px;
+}
+}
+
+
+@media (max-width: 800px){
+
+    .first-image{
+        display:flex;
+        align-items:center;
+        background-color:rgba(255, 255, 255, 0.799);
+        margin:10rem 2rem 10rem 2rem;
+        padding:2rem;
+        text-align:center;
+        justify-content: flex-start;
+    }
+    .buy-now{
+        display:flex;
+        justify-content: flex-start;
+        font-size:1rem;
+        background-color:black;
+        color:white;
+        border-radius:50px;
+        
+        margin:1rem 1rem 1rem 5rem;
+        padding:10px 10px 10px 10px;
+    }
+    .first-image img{
+        margin:0;
+        padding:0;
+        width:220px;
+        
+    }
+
+
+
+
+
+}
+
+
+@media (max-width: 600px){
+
+    .first-image{
+        display:flex;
+        align-items:center;
+        background-color:rgba(255, 255, 255, 0.799);
+        margin:7rem 0.5rem 7rem 0.5rem;
+        padding:2rem;
+        text-align:center;
+        justify-content: flex-start;
+    }
+    .buy-now{
+        display:flex;
+        justify-content: flex-start;
+        font-size:0.9rem;
+        background-color:black;
+        color:white;
+        border-radius:50px;
+        
+        margin:1rem 1rem 1rem 2.4rem;
+        padding:7px 7px 7px 17px;
+    }
+    .first-image img{
+        margin:0;
+        padding:0;
+        width:210px;
+        
+    }
+}
+    @media (max-width: 490px){
+
+        .first-image{
+            display:flex;
+            align-items:center;
+            background-color:rgba(255, 255, 255, 0.799);
+            margin:5rem 0.3rem 5rem 0.3rem;
+            padding:1rem;
+            text-align:center;
+            justify-content: flex-start;
+        }
+        .buy-now{
+            display:flex;
+            justify-content: flex-start;
+            font-size:0.9rem;
+            background-color:black;
+            color:white;
+            border-radius:50px;
+            
+            margin:1rem 1rem 1rem 2rem;
+            padding:7px 7px 7px 17px;
+        }
+        .first-image img{
+            margin:0;
+            padding:0;
+            width:140px;
+            
+        }
+
+
+
+
+
+}
+
+@media (max-width: 390px){
+
+    .first-image{
+        display:flex;
+        align-items:center;
+        background-color:rgba(255, 255, 255, 0.799);
+        margin:6rem 1rem 5rem 1rem;
+        padding:0.5rem;
+        text-align:center;
+        justify-content: flex-start;
+    }
+    .buy-now{
+        display:flex;
+        justify-content: flex-start;
+        font-size:0.8rem;
+        background-color:black;
+        color:white;
+        border-radius:50px;
+        
+        margin:1rem 0rem 1rem 3.2rem;
+        padding:4px 6px 4px 6px;
+    }
+    .first-image img{
+        margin:0;
+        padding:0;
+        width:114px;
+        
+    }
+
+
+
+
+
+}
