@@ -26,7 +26,7 @@ a {
     top: 0; /* La fija en la parte superior de la ventana */
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.837);
+    background-color: rgba(245, 245, 245, 0.848);
     z-index: 100; /* Coloca la barra de navegación sobre el contenido */
     display: flex;
     justify-content: space-between;
@@ -86,7 +86,7 @@ body{
 .first-image{
     display:flex;
     align-items:center;
-    background-color:rgba(255, 255, 255, 0.799);
+    background-color: rgba(245, 245, 245, 0.848);
     margin:10rem 25rem 10rem 25rem;
     padding:2rem;
     text-align:center;
