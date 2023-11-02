@@ -86,7 +86,6 @@ body{
 .first-image{
     display:flex;
     align-items:center;
-    background-color: rgba(245, 245, 245, 0.848);
     margin:10rem 25rem 10rem 25rem;
     padding:2rem;
     text-align:center;
@@ -114,7 +113,6 @@ body{
     .first-image{
         display:flex;
         align-items:center;
-        background-color:rgba(255, 255, 255, 0.799);
         margin:10rem 20rem 10rem 20rem;
         padding:2rem;
         text-align:center;
@@ -145,7 +143,6 @@ body{
         .first-image{
             display:flex;
             align-items:center;
-            background-color:rgba(255, 255, 255, 0.799);
             margin:10rem 10rem 10rem 10rem;
             padding:2rem;
             text-align:center;
@@ -188,7 +185,6 @@ body{
     .first-image{
         display:flex;
         align-items:center;
-        background-color:rgba(255, 255, 255, 0.799);
         margin:10rem 5rem 10rem 5rem;
         padding:2rem;
         text-align:center;
@@ -273,7 +269,6 @@ body{
     .first-image{
         display:flex;
         align-items:center;
-        background-color:rgba(255, 255, 255, 0.799);
         margin:10rem 2rem 10rem 2rem;
         padding:2rem;
         text-align:center;
@@ -309,7 +304,6 @@ body{
     .first-image{
         display:flex;
         align-items:center;
-        background-color:rgba(255, 255, 255, 0.799);
         margin:7rem 0.5rem 7rem 0.5rem;
         padding:2rem;
         text-align:center;
@@ -338,7 +332,6 @@ body{
         .first-image{
             display:flex;
             align-items:center;
-            background-color:rgba(255, 255, 255, 0.799);
             margin:5rem 0.3rem 5rem 0.3rem;
             padding:1rem;
             text-align:center;
@@ -373,7 +366,6 @@ body{
     .first-image{
         display:flex;
         align-items:center;
-        background-color:rgba(255, 255, 255, 0.799);
         margin:6rem 1rem 5rem 1rem;
         padding:0.5rem;
         text-align:center;
