@@ -108,12 +108,82 @@ body{
     padding:0;
     
 }
+.buy-now a {
+    color: white; /* Change this color to the one you prefer */
+
+/*MENU*/
+.img-gallery{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+
+}
+.img-gallery img{
+    width:100%;
+    cursor: pointer;
+}
+.img-gallery img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68,77,136, 0,2);
+}
+
+.full-img{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    position:fixed;
+    top:0;
+    left:0;
+    display:none;
+    align-items:center;
+    justify-content: center;
+    z-index:100;
+}
+
+.full-img img{
+    width:90%;
+    max-width:500px;
+}
+
+.full-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color:white;
+    cursor:pointer;
+
+}
+.pedir{
+    position:absolute;
+    right:20%; 
+    background-color:rgb(0, 0, 0);
+    font-size:2rem;
+    border-radius:30px;
+    padding:0.8rem;
+    cursor:pointer;
+
+}
+.pedir a{
+color:white;
+}
+.pedir a:hover{
+    color:#6e4c33;
+}
+
+
+
 
 @media (max-width: 1590px){
+    /*FRAPPE IMAGE WITH COMPRAR AHORA SECTION*/
 
     .first-image{
         display:flex;
         align-items:center;
+        background-color:rgba(255, 255, 255, 0.799);
         margin:10rem 20rem 10rem 20rem;
         padding:2rem;
         text-align:center;
@@ -136,14 +206,27 @@ body{
         width:250px;
         
     }
+    /*Button to buy from the gallery*/
+    .pedir{
+        position:absolute;
+        top:40%;
+        right: 15%;
+        font-size:1.5rem;
+    
+    }
+    
+
+
 
 
 }
     @media (max-width: 1390px){
+        /*FRAPPE IMAGE WITH COMPRAR AHORA SECTION*/
 
         .first-image{
             display:flex;
             align-items:center;
+            background-color:rgba(255, 255, 255, 0.799);
             margin:10rem 10rem 10rem 10rem;
             padding:2rem;
             text-align:center;
@@ -171,8 +254,16 @@ body{
 
         
     
-    }
+    
+    /*Button to buy from the gallery*/
+    .pedir{
+    position:absolute;
+    top:40%;
+    right: 10%;
+    font-size:1.5rem;
 
+    }
+ }
 
 
 
@@ -180,12 +271,12 @@ body{
 
 
 @media (max-width: 1050px){
+    /*FRAPPE IMAGE WITH COMPRAR AHORA SECTION*/
 
-
-    /*COMPRAR AHORA SECTION*/
     .first-image{
         display:flex;
         align-items:center;
+        background-color:rgba(255, 255, 255, 0.799);
         margin:10rem 5rem 10rem 5rem;
         padding:2rem;
         text-align:center;
@@ -212,9 +303,8 @@ body{
     body{
         font-family: Arial, sans-serif;
         margin: 0;
-        background-image: url(imgcoffee/background.jpg);
-        background-repeat:no-repeat;
-        background-size:cover;
+        background-image: url(imgcoffee/background4.png);
+        background-attachment: fixed;
         background-color: rgb(16, 16, 16);
     }
     /*Navigation Bar*/
@@ -262,14 +352,26 @@ body{
 .logo{
     width:65px;
 }
+
+.pedir{
+    position:absolute;
+    top:45%;
+    right: 5%;
+    font-size:1rem;
+    padding:5px;
+
+}
 }
 
 
 @media (max-width: 800px){
 
+    /*FRAPPE IMAGE WITH COMPRAR AHORA SECTION*/
+
     .first-image{
         display:flex;
         align-items:center;
+        background-color:rgba(255, 255, 255, 0.799);
         margin:10rem 2rem 10rem 2rem;
         padding:2rem;
         text-align:center;
@@ -295,16 +397,26 @@ body{
 
 
 
-
+    .pedir{
+        position:absolute;
+        top:75%;
+        right: 40%;
+        font-size:1rem;
+        padding:5px;
+    
+    }
 
 }
 
 
 @media (max-width: 600px){
 
+    /*FRAPPE IMAGE WITH COMPRAR AHORA SECTION*/
+
     .first-image{
         display:flex;
         align-items:center;
+        background-color:rgba(255, 255, 255, 0.799);
         margin:7rem 0.5rem 7rem 0.5rem;
         padding:2rem;
         text-align:center;
@@ -327,12 +439,23 @@ body{
         width:210px;
         
     }
+
+    .pedir{
+        position:absolute;
+        top:80%;
+        right: 37%;
+        font-size:1.5rem;
+        padding:5px;
+    
+    }
 }
     @media (max-width: 490px){
+        /*FRAPPE IMAGE WITH COMPRAR AHORA SECTION*/
 
         .first-image{
             display:flex;
             align-items:center;
+            background-color:rgba(255, 255, 255, 0.799);
             margin:5rem 0.3rem 5rem 0.3rem;
             padding:1rem;
             text-align:center;
@@ -363,10 +486,12 @@ body{
 }
 
 @media (max-width: 390px){
+    /*FRAPPE IMAGE WITH COMPRAR AHORA SECTION*/
 
     .first-image{
         display:flex;
         align-items:center;
+        background-color:rgba(255, 255, 255, 0.799);
         margin:6rem 1rem 5rem 1rem;
         padding:0.5rem;
         text-align:center;
@@ -388,6 +513,15 @@ body{
         padding:0;
         width:114px;
         
+    }
+    .pedir{
+        color:black;
+        position:absolute;
+        top:75%;
+        right: 28%;
+        font-size:1.5rem;
+        padding:5px;
+    
     }
 
 
